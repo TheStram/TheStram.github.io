@@ -1,0 +1,11 @@
+// Espera a que se cargue el documento
+document.addEventListener("DOMContentLoaded", function() {
+    // Selecciona todos los elementos con la clase "intro"
+    const introElements = document.querySelectorAll(".intro");
+    
+    // Cuando se complete la animación, redirige a otra página
+    introElements[0].addEventListener("animationend", function() {
+        // Cambia la ubicación de la página a la nueva página
+        window.location.href = "page/index.html";
+    });
+});
