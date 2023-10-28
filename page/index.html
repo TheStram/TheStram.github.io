@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/styles/styles-light.css">
+    <link id="style-link" rel="stylesheet" href="assets/styles/styles-light.css">
     <link rel="shortcut icon" href="assets/images/Logo250px.png" type="image/x-icon">
     <title>NeonVisions de Ulises</title>
 </head>
@@ -14,44 +14,53 @@
 
     <div class="container">
         <center>
+        <div class="row">
+          
+        <div class="col-xl-12">
         <nav class="navbar navbar-expand-lg" id="nav-bar">
-            <div class="container-fluid">
+            <div class  ="container-fluid">
               <div class="col-xl-2 col-8">
-              <a class="navbar-brand" href="index.html"><img src="assets/images/Logo250px.png" alt="" id="Logo00" >NeonVisions</a></div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="index.html" id="logo-t"><img src="assets/images/Logo250px.png" alt="" id="Logo00" >NeonVisions</a></div>
+              <button id="drop-but" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="transition: 1s;">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="transition: 500ms;">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item" id="nav-item00">
-                    <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                    <a class="nav-link active" aria-current="page" href="#" id="nav-text-item">Sobre mi</a>
                   </li>
                   <li class="nav-item" id="nav-item00">
-                    <a class="nav-link" href="#">Mis proyectos</a>
+                    <a class="nav-link" href="#" id="nav-text-item">Mis proyectos</a>
                   </li>
                   <li class="nav-item" id="nav-item00">
-                    <a class="nav-link" href="#">Habilidades</a>
+                    <a class="nav-link" href="#" id="nav-text-item">Habilidades</a>
                   </li>
                   
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-text-item">
                       Mis redes sociales
                     </a>
-                    <ul class="dropdown-menu" style="transition: 5s;">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu row" style="transition: 5s;" id="drowp-men">
+                      <center><li><a class="btn btn-outline-info" href="#" id="drop-it">Action</a></li></center>
+                      <center><li><a class="btn btn-outline-info" href="#" id="drop-it">Another action</a></li></center>
+                      <center><li><a class="btn btn-outline-info" href="#" id="drop-it">Something else here</a></li></center>
                     </ul>
+                  </li>
+                  <li class="nav-item" style="margin-top: 1%;">
+                    <label class="switch">
+                      <input type="checkbox" id="style-switch">
+                      <span class="slider"></span>
+                  </label>
                   </li>
                 </ul>
               </div>
             </div>
-          </nav></center>
+          </nav></div></div></center>
     </div>
 
 
 </body>
 <script src="assets/scripts/bootstrap.bundle.min.js"></script>
+<script src="assets/scripts/sty_switch.js"></script>
 
 </html>
