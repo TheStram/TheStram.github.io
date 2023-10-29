@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 body{
     background-color: #27212c;
 }
@@ -11,6 +12,9 @@ body{
     animation: navbar 2s 1;
     width: 100%;
     color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    font-weight: 3;
+    z-index: 15;
 }
 
 #logo-t{
@@ -111,6 +115,94 @@ body{
     background: #303136;
     /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  }
+
+  #master_dev_box{
+    position: relative;  
+  }
+
+  #dev_name{
+    margin: auto;
+    position: relative;
+    border-radius: 96% 4% 94% 6% / 6% 94% 6% 94% ;
+    background: linear-gradient(135deg, #DB3069, #858BE3);
+    animation-name: border00;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes border00 {
+    0%{
+      border-radius: 96% 4% 94% 6% / 6% 94% 6% 94% ;
+    }
+    25%{
+      border-radius: 48% 52% 51% 49% / 31% 74% 26% 69% ;
+    }
+    50%{
+      border-radius: 38% 62% 96% 4% / 8% 39% 61% 92% ;
+    }
+    75%{
+      border-radius: 11% 89% 8% 92% / 84% 16% 84% 16% ;
+    }
+    100%{
+      border-radius: 96% 4% 94% 6% / 6% 94% 6% 94% ;
+    }
+  }
+
+#name_master{
+  text-align: center;
+  font-family: 'inter' sans-serif;
+  font-size: 600%;
+  color: aliceblue;
+}
+
+#desc_master{
+  text-align: center;
+  font-family: 'mukta' sans-serif;
+  font-size: 125%;
+  color: aliceblue;
+}
+
+#dev_img{
+  position: relative;  
+}
+
+#sub_dev_img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}  
+  #circle000{
+  position: absolute;
+  margin: auto;
+  z-index: 4;
+  width: 65%;
+  height: 80%;
+  border-radius: 200px;
+  background:linear-gradient(145deg, #353535, #0f0f0f);
+  box-shadow: inset 3px 3px 13px rgba(40, 98, 153, 0.823),-3px -3px 26px  rgba(0, 13, 188, 0.712);
+}
+
+  #circle001{
+  position: absolute;
+  margin: auto;
+  z-index: 3;
+  width: 77%;
+  height: 95%;
+  border-radius: 200px;
+  background:linear-gradient(145deg, #353535, #0f0f0f);
+  box-shadow: inset 3px 3px 5px rgba(40, 98, 153, 0.823),-3px -3px 26px  rgba(0, 13, 188, 0.712);
+  }
+
+  #img_circle{
+  position: relative;
+  z-index: 5;
+  width: 55%;
+  margin: 12%;
   }
 
 @keyframes navbar {
