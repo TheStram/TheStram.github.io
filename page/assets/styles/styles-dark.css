@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@font-face {font-family: metal_lord; src: url("../fonts/metal_lord.otf");}
+
 body{
     background-color: #27212c;
+}
+
+#nav-master{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
 
 #nav-bar{
@@ -118,40 +127,25 @@ body{
   }
 
   #master_dev_box{
-    position: relative;  
+    position: relative;
+    margin-top: 6%;  
   }
 
   #dev_name{
+    padding-top: 5%;
+    padding-bottom: 10%;
     margin: auto;
     position: relative;
-    border-radius: 96% 4% 94% 6% / 6% 94% 6% 94% ;
-    background: linear-gradient(135deg, #DB3069, #858BE3);
+    border-radius: 84% 16% 94% 6% / 23% 83% 17% 77%  ;
+    background: linear-gradient(135deg, #00ccff, #858BE3);
     animation-name: border00;
     animation-duration: 10s;
     animation-iteration-count: infinite;
   }
   
-  @keyframes border00 {
-    0%{
-      border-radius: 96% 4% 94% 6% / 6% 94% 6% 94% ;
-    }
-    25%{
-      border-radius: 48% 52% 51% 49% / 31% 74% 26% 69% ;
-    }
-    50%{
-      border-radius: 38% 62% 96% 4% / 8% 39% 61% 92% ;
-    }
-    75%{
-      border-radius: 11% 89% 8% 92% / 84% 16% 84% 16% ;
-    }
-    100%{
-      border-radius: 96% 4% 94% 6% / 6% 94% 6% 94% ;
-    }
-  }
-
 #name_master{
   text-align: center;
-  font-family: 'inter' sans-serif;
+  font-family: metal_lord;
   font-size: 600%;
   color: aliceblue;
 }
@@ -184,7 +178,10 @@ body{
   height: 80%;
   border-radius: 200px;
   background:linear-gradient(145deg, #353535, #0f0f0f);
-  box-shadow: inset 3px 3px 13px rgba(40, 98, 153, 0.823),-3px -3px 26px  rgba(0, 13, 188, 0.712);
+  box-shadow: inset 3px 3px 13px #00ccffc7,-3px -3px 26px  #000dbcb6;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  animation: none;
 }
 
   #circle001{
@@ -195,7 +192,10 @@ body{
   height: 95%;
   border-radius: 200px;
   background:linear-gradient(145deg, #353535, #0f0f0f);
-  box-shadow: inset 3px 3px 5px rgba(40, 98, 153, 0.823),-3px -3px 26px  rgba(0, 13, 188, 0.712);
+  box-shadow: inset 3px 3px 5px #00ccffc7,-3px -3px 26px  #000dbcb6;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  animation: none;
   }
 
   #img_circle{
@@ -216,4 +216,28 @@ body{
         width: 100%;
         opacity: 100%;
     }
+}
+
+@keyframes border00 {
+  0%{
+    border-radius: 84% 16% 94% 6% / 23% 83% 17% 77% ;
+  }
+  25%{
+    border-radius: 48% 52% 51% 49% / 31% 74% 26% 69% ;
+  }
+  50%{
+    border-radius: 38% 62% 96% 4% / 8% 39% 61% 92% ;
+  }
+  75%{
+    border-radius: 11% 89% 8% 92% / 84% 16% 84% 16% ;
+  }
+  100%{
+    border-radius: 84% 16% 94% 6% / 23% 83% 17% 77% ;
+  }
+}
+
+@keyframes scaleAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }

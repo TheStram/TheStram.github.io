@@ -12,7 +12,7 @@
 
 <body>
 
-    <div class="container">
+    <div class="container" id="nav-master" >
         <center>
         <div class="row">
         <div class="col-xl-12 col-12">
@@ -51,6 +51,11 @@
                       <span class="slider"></span>
                   </label>
                   </li>
+                  <li class="nav-item" style="margin-top: 1%;">
+                    <button id="play-pause-music" class="btn btn-primary">Reproducir música</button>
+                    <audio id="my-audio" src="assets/sounds/Were_Not_Gonna_Take.mp3"></audio>
+                  </li>
+                  
                 </ul>
               </div>
             </div>
@@ -60,21 +65,24 @@
     <br>
     <br>
     <div class="container" id="master_dev_box" ><div class="row">
-      <div id="dev_name" class="col-xl-6 col-12">
-          <h1 id="name_master">Ulises López</h1>
-          <hr>
-          <h3 id="desc_master">Desarrollador web - Desarrollador de videojuegos</h3>
-    </div>
-      <div id="dev_img" class="col-xl-6 col-12">
+      <div id="box_img" class="col-xl-6 col-12">
         <div id="sub_dev_img">
           <div id="circle000"></div>
           <div id="circle001"></div>
           <img id="img_circle" src="assets/images/yo750px.png" alt="">
         </div>
       </div>
+      <div id="dev_name" class="col-xl-6 col-12">
+          <h1 id="name_master">Ulises López</h1>
+          <hr>
+          <h3 id="desc_master">Desarrollador web - Desarrollador de videojuegos</h3>
+    </div>
+     
     </div></div>
 
 </body>
+
+<script src="assets/scripts/music.js"></script>
 <script src="assets/scripts/bootstrap.bundle.min.js"></script>
 <script src="assets/scripts/sty_switch.js"></script>
 
