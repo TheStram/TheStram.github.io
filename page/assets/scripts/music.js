@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const playPauseButton = document.getElementById("play-pause-music");
     const circle0 = document.getElementById("circle000");
     const circle1 = document.getElementById("circle001");
+    const divname = document.getElementById("name_master");
 
     playPauseButton.addEventListener("click", function () {
         if (audio.paused) {
@@ -11,12 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
             playPauseButton.textContent = "Pausar música";
             circle0.style.animation = "scaleAnimation 0.6s infinite 0.5s";  
             circle1.style.animation = "scaleAnimation 0.6s infinite 0s";           
+            divname.style.animation = "scaleAnimation 0.8s infinite 0s";           
        } else {
             // Pausar la música si se está reproduciendo
             audio.pause();
             playPauseButton.textContent = "Reproducir música";
             circle0.style.animation = "none";
             circle1.style.animation = "none";
+            divname.style.animation = "none";
         }
     });
 });
