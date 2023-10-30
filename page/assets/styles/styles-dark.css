@@ -138,9 +138,9 @@ body{
     position: relative;
     border-radius: 84% 16% 94% 6% / 23% 83% 17% 77%  ;
     background: linear-gradient(135deg, #00ccff, #858BE3);
-    animation-name: border00;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation-name: border00,Zoom-in;
+    animation-duration: 10s,1.8s;
+    animation-iteration-count: infinite,1;
   }
   
 #name_master{
@@ -172,6 +172,9 @@ body{
   justify-content: center;
   align-items: center;
   z-index: 0;
+  animation-name: Zoom-in;
+  animation-duration: 1.8s;
+  animation-iteration-count: 1;
 }  
   #circle000{
   position: absolute;
@@ -244,3 +247,29 @@ body{
   50% { transform: scale(1.1); }
   100% { transform: scale(1); }
 }
+
+@keyframes Zoom-in{
+  0%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  85%{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  90%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  95%{
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  }
