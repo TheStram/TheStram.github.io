@@ -318,6 +318,45 @@ body{
 }
 
 
+.lenguage-block{
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 2%;
+}
+
+.l-tx{text-align: left;} .p-tx{text-align: right;}
+
+.prog-sk0{
+  width: 100%;
+  height: 28px;
+  background: #DB3069;
+  padding-top: 4px;
+  border-radius: 15px;
+
+  view-timeline-name: --br-progs;
+  view-timeline-axis: block;
+
+  animation-timeline: --br-progs;
+  animation-name: br-progs;
+
+  animation-range: entry 10% cover 30%;
+  animation-fill-mode: both;
+}
+
+@keyframes br-progs {
+  from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+.prog-sk1{
+  height: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+}
 
 
 @keyframes shad-block {
